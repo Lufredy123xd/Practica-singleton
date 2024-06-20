@@ -8,8 +8,18 @@
 #ifndef USERCONTROLLER_H_
 #define USERCONTROLLER_H_
 
+#include <vector>;
+#include "usuario.h";
+
 class userController {
+private:
+	userController instancia;
+	vector<suario> user;
+	userController();
+
 public:
+	userController getInstancia();
+
 	userController();
 	virtual ~userController();
 };
