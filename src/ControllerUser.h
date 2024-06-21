@@ -9,19 +9,21 @@
 #define USERCONTROLLER_H_
 
 #include <vector>;
+
+#include "InterfaceControllerUser.h"
 #include "usuario.h";
 
-class userController {
+
+class ControllerUser: public InterfaceControllerUser {
 private:
-	userController instancia;
-	vector<suario> user;
-	userController();
+	ControllerUser instancia;
+	vector<usuario> user;
+	ControllerUser();
 
 public:
-	userController getInstancia();
+	ControllerUser getInstancia();
 
-	userController();
-	virtual ~userController();
+	virtual ~ControllerUser();
 };
 
 #endif /* USERCONTROLLER_H_ */

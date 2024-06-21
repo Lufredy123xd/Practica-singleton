@@ -7,10 +7,22 @@
 
 #include "Fabrica.h"
 
+#include "ControllerUser.h"
+
 Fabrica::Fabrica() {
 	// TODO Auto-generated constructor stub
 
 }
+
+Fabrica Fabrica::getFabrica() {
+	if(this->instancia == NULL)
+		{
+			this->instancia = new Fabrica();
+		}
+		return this->instancia;
+}
+
+
 
 Fabrica::~Fabrica() {
 	// TODO Auto-generated destructor stub

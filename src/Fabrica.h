@@ -8,13 +8,20 @@
 #ifndef FABRICA_H_
 #define FABRICA_H_
 
+#include <iostream>
+using namespace std;
+#include "ControllerUser.h"
+
+
 class Fabrica {
 private:
+	ControllerUser controller;
 	Fabrica instancia;
 	Fabrica();
 public:
+
 	Fabrica getFabrica();
-	Fabrica();
+
 	virtual ~Fabrica();
 };
 
